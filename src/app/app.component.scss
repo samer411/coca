@@ -1,0 +1,24 @@
+@import "../assets/scss/shared-styles/Variables.scss";
+
+.coca-cola {
+  height: 100vh;
+  width: 100vw;
+  background-color: $BC;
+  overflow: hidden;
+  display: flex;
+  .sideBarCoca {
+    height: 100%;
+    width: 13.5%;
+    background-color: $Pri;
+  }
+  .mainContentCoca {
+    height: 100%;
+    width: 86.5%;
+    app-nav-bar {
+      height: 5%;
+    }
+    app-dashboard {
+      height: 95%;
+    }
+  }
+}

@@ -1,6 +1,87 @@
 @import "../../../assets/scss/shared-styles/Variables.scss";
+
 .navbar {
   background-color: $w;
   height: 5%;
   box-shadow: 0px 3px 6px #272d3b33;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left-side-buttons {
+    height: 80%;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    select {
+      background-color: $nav-buttons;
+      color: $w;
+      height: 150%;
+      font-size: 16px;
+      padding-left: 30px;
+      padding-right: 30px;
+      outline: none;
+      cursor: pointer;
+      border-radius: 8px;
+
+      option {
+        img {
+          display: block;
+          background-color: black;
+        }
+      }
+    }
+
+    a.line {
+      background-color: $nav-buttons;
+      display: inline-block;
+      border-radius: 8px;
+      height: 150%;
+      margin: 0 30px;
+      img {
+        display: block;
+        padding: 5px;
+        width: 96%;
+        height: 100%;
+      }
+    }
+  }
+  .time {
+    height: 80%;
+    display: flex;
+    align-items: center;
+
+    button {
+      cursor: pointer;
+      color: $btn-inactive;
+      outline: none;
+      border: none;
+      font-size: 16px;
+      height: 150%;
+      font-size: 16px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: 0 10px;
+      border-radius: 8px;
+    }
+    button.active {
+      background-color: $nav-buttons;
+      color: $w;
+    }
+  }
+  .calendar {
+    height: 80%;
+    p-calendar {
+      margin-top: 200px;
+      margin-right: 20px;
+      span {
+        height: 100%;
+        .p-button {
+          background-color: $Pri;
+          span {
+            margin-top: -15px;
+          }
+        }
+      }
+    }
+  }
 }

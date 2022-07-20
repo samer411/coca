@@ -1,1 +1,32 @@
-<div class="navbar"></div>
+<div class="navbar">
+  <div class="left-side-buttons">
+    <select name="planet" id="">
+      <img src="../../../assets/images/planet.svg" alt="" />
+      <option
+        value="planetName"
+        data-thumbnail="../../../assets/images/setting.svg"
+      >
+        Planet Name
+      </option>
+    </select>
+    <a class="line" href="">
+      <img src="../../../assets/images/line.svg" alt="" />
+    </a>
+    <a class="machines" href="">
+      <img src="../../../assets/images/machines.svg" alt="" />
+    </a>
+  </div>
+  <div class="time" (click)="onButtonGroupClick($event)">
+    <button type="button" class="active">Today</button>
+    <button type="button">Yesterday</button>
+    <button type="button">Last Week</button>
+  </div>
+  <div class="calendar">
+    <p-calendar
+      [(ngModel)]="date"
+      [showIcon]="true"
+      inputId="icon"
+    ></p-calendar>
+    <!-- <input type="date" name="" id="" /> -->
+  </div>
+</div>

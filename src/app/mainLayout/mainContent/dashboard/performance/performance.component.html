@@ -1,0 +1,32 @@
+<div class="second-col">
+  <div class="title">
+    <img src="../../../../assets/images/pereformance.svg" />
+    <span>Performance Indecator KPI</span>
+  </div>
+  <div class="wraper">
+    <circle-progress
+      [percent]="76"
+      [radius]="30"
+      [showInnerStroke]="false"
+      [showSubtitle]="false"
+      [titleFontSize]="'20'"
+      [units]="'%'"
+      [outerStrokeColor]="'#08415C'"
+      [outerStrokeWidth]="5"
+      [animation]="true"
+      [animationDuration]="500"
+    ></circle-progress>
+    <div class="progress-bars">
+      <div *ngFor="let value of values" class="progress-bar-special">
+        <div>
+          <mat-progress-bar
+            mode="determinate"
+            [value]="value"
+          ></mat-progress-bar>
+          <span class="desc"> Availability</span>
+        </div>
+        <span>{{ value }}%</span>
+      </div>
+    </div>
+  </div>
+</div>

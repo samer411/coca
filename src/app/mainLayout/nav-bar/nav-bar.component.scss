@@ -55,7 +55,7 @@
       color: $btn-inactive;
       outline: none;
       border: none;
-      font-size: 16px;
+      font-size: 13px;
       height: 150%;
       font-size: 16px;
       padding-left: 30px;
@@ -70,8 +70,9 @@
   }
   .calendar {
     height: 80%;
+    margin-top: -10px;
     p-calendar {
-      margin-top: 200px;
+      margin-top: 180px;
       margin-right: 20px;
       span {
         height: 100%;

@@ -1,0 +1,19 @@
+@import "../shared/shared.scss";
+.second-col {
+  .wraper {
+    margin-top: 0px;
+  }
+  .progress-bars {
+    width: 60%;
+    margin-right: 10px;
+  }
+  .progress-bar-special:nth-of-type(2),
+  .progress-bar-special:nth-of-type(3) {
+    margin-top: -10px;
+  }
+  .progress-bar-special {
+    .desc {
+      color: #2c3e50;
+    }
+  }
+}

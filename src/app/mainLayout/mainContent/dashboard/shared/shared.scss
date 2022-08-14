@@ -1,0 +1,70 @@
+@import "../../../../../assets/scss/shared-styles/Variables.scss";
+
+.title {
+  width: 100%;
+  margin: 0;
+  padding: 10px 15px;
+
+  font: normal normal medium 14px/18px Montserrat;
+  img {
+    width: 20px;
+    margin-right: 20px;
+  }
+  border-bottom: 1px solid #0000001a;
+}
+.progress-bar-special {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  div {
+    margin-top: 20px;
+    width: 80%;
+    ::ng-deep .mat-progress-bar-fill::after {
+      background-color: $orange;
+    }
+
+    ::ng-deep .mat-progress-bar-buffer {
+      background: #e4e8eb;
+    }
+
+    ::ng-deep .mat-progress-bar {
+      height: 7px;
+      border-radius: 10px;
+    }
+    .desc {
+      color: $numbers;
+      font: normal normal normal 10px/12px Montserrat;
+    }
+  }
+  span {
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+}
+
+.wraper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.example {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  & > div:nth-of-type(1) {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    sub {
+      font-size: 10px;
+      margin-left: 5px;
+    }
+  }
+
+  & > span:last-child {
+    color: $numbers;
+    font: normal normal normal 8px/10px Montserrat;
+  }
+}

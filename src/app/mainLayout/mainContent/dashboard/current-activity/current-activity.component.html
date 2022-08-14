@@ -1,0 +1,38 @@
+<div class="col">
+  <div class="title">
+    <img src="../../../../assets/images/Activity.svg" />
+    <span>Current Activity</span>
+  </div>
+  <div class="container">
+    <div class="row head">
+      <div class="col"></div>
+      <div class="col"><span>OEE</span><span>70%</span></div>
+      <div class="col"><span>MTBF[h]</span><span>70%</span></div>
+      <div class="col"><span>UPTIME</span><span>70%</span></div>
+    </div>
+    <div *ngFor="let line of lines" class="row">
+      <div class="col line-name">
+        <span class="text">LINE NAME</span
+        ><span class="color" [style.background]="line.color"></span>
+      </div>
+      <div class="col special-progress">
+        <span [style.width]="line.oee" [style.background]="line.color"></span>
+
+        <span [style.color]="line.color">{{ line.oee }}</span>
+      </div>
+      <div class="col special-progress">
+        <span [style.width]="line.mtbf" [style.background]="line.color"></span>
+
+        <span [style.color]="line.color">{{ line.mtbf }}</span>
+      </div>
+      <div class="col special-progress">
+        <span
+          [style.width]="line.uptime"
+          [style.background]="line.color"
+        ></span>
+
+        <span [style.color]="line.color">{{ line.uptime }}</span>
+      </div>
+    </div>
+  </div>
+</div>

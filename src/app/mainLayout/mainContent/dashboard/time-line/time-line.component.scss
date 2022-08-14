@@ -1,0 +1,30 @@
+@import "../shared/shared.scss";
+.col {
+  .line {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    .text {
+      font: normal normal bold 11px/13px Montserrat;
+      color: $header-color;
+      margin-right: 5px;
+      margin-left: 16px;
+    }
+    .special-colored-div {
+      height: 8px;
+      width: 90%;
+      background: linear-gradient(
+        to right,
+        $Pri 0%,
+        $Pri 10%,
+        #2ec4b6 10%,
+        #2ec4b6 40%,
+        #cdd5e1 40%,
+        #cdd5e1 60%,
+        $Pri 60%,
+        $Pri 70%,
+        #2ec4b6 70%
+      );
+    }
+  }
+}

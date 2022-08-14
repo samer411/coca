@@ -1,0 +1,55 @@
+@import "../shared/shared.scss";
+
+.row {
+  margin: 5px 0;
+}
+.line-name {
+  display: flex;
+  align-items: center;
+
+  .text {
+    font: normal normal bold 11px/13px Montserrat;
+    color: $header-color;
+  }
+
+  .color {
+    width: 17px;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    margin-left: 10px;
+  }
+}
+.col {
+  .head {
+    font: normal normal normal 16px/24px Montserrat;
+    font-weight: 600;
+    .col {
+      color: $header-color;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span:nth-of-type(2) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .special-progress {
+    display: flex;
+    align-items: center;
+
+    span:nth-of-type(1) {
+      display: block;
+      height: 100%;
+      border-radius: 0 5px 5px 0;
+      padding: 0;
+      margin-left: 0;
+    }
+
+    span:nth-of-type(2) {
+      display: block;
+      margin-left: 5px;
+      font: normal normal 600 10px/15px Montserrat;
+    }
+  }
+}

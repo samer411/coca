@@ -1,0 +1,33 @@
+<div class=" first-col">
+  <div class="title">
+    <img src="../../../../assets/images/product.svg" />
+    <span>Total Production</span>
+  </div>
+
+  <div class="wraper">
+    <div class="example">
+      <div>
+        <span class="number">5000</span>
+        <sub>L/s</sub>
+      </div>
+
+      <span>Production /h</span>
+    </div>
+    <div class="example">
+      <div>
+        <span class="number">5000</span>
+        <sub>L/s</sub>
+      </div>
+
+      <span>Production /h</span>
+    </div>
+  </div>
+
+  <div class="progress-bar-special">
+    <div>
+      <mat-progress-bar mode="determinate" [value]="value"></mat-progress-bar>
+      <span class="desc"> Production Yield</span>
+    </div>
+    <span>{{ value }}%</span>
+  </div>
+</div>

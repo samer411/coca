@@ -4,28 +4,19 @@
   height: 100vh;
   width: 100vw;
   background-color: $BC;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
+  position: relative;
+
   .sideBarCoca {
     height: 100%;
     width: 13.5%;
     background-color: $Pri;
+    position: fixed;
   }
   .mainContentCoca {
     height: 100%;
     width: 86.5%;
-    app-nav-bar {
-      height: 5%;
-    }
-    app-dashboard {
-      height: 95%;
-    }
-  }
-}
-@media (max-width: 1200px) {
-  .coca-cola {
-    .sideBarCoca {
-      height: 5%;
-    }
+    margin-left: 13.6%;
   }
 }

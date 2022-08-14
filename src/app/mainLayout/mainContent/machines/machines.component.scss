@@ -1,0 +1,72 @@
+@import "../../../../assets/scss/shared-styles/Variables.scss";
+
+.container {
+  height: 100%;
+  .row {
+    .col {
+      margin: 20px;
+      background-color: $w;
+      box-shadow: 0px 8px 12px #0000001a;
+      border-radius: 10px;
+      width: 200px;
+      padding: 0;
+      .title {
+        background-color: $nav-buttons;
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+        color: $w;
+        font: normal normal medium 14px/18px Montserrat;
+        letter-spacing: 0.1em;
+        box-shadow: 0px 8px 12px #0000001a;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .progressSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        .barrierLine {
+          width: 100%;
+          margin: 20px 0;
+          position: relative;
+          border-top: 1px solid $nav-buttons;
+          .lineProgress {
+            color: $nav-buttons;
+            font: normal normal bold 10px/10px Montserrat;
+            padding: 5px 20px;
+            position: absolute;
+            top: -10px;
+            right: 60px;
+            background-color: $w;
+          }
+        }
+        .circularProgress :nth-child(2) {
+          margin: 0 40px;
+        }
+      }
+      .line {
+        position: relative;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          width: 20px;
+          margin-right: 20px;
+        }
+        .number {
+          color: $numbers;
+          // margin-left: 150px;
+          font-size: 20px;
+        }
+        sub {
+          color: $numbers;
+          padding: 2px;
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+}

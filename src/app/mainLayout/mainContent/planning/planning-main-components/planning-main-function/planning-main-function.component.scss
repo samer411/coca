@@ -1,0 +1,24 @@
+@import "../../../../../../assets/scss/shared-styles/Variables.scss";
+
+.container {
+  width: 500px;
+  margin-top: 100px;
+  .row {
+    width: 100%;
+    margin: 20px;
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: $w;
+    color: #00000061;
+    position: relative;
+    border-radius: 15px;
+    span {
+      display: block;
+      padding: 15px;
+    }
+    i {
+      position: absolute;
+      right: -90%;
+      top: 20px;
+    }
+  }
+}

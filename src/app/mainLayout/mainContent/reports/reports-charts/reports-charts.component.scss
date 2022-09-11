@@ -1,0 +1,28 @@
+div {
+  display: block;
+  .title {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #cdd5e1;
+    padding: 10px 0;
+    margin-bottom: 5px;
+    span {
+      display: block;
+      margin: 0 10px;
+    }
+    span:nth-of-type(2) {
+      font: normal normal bold 14px/17px Montserrat;
+      color: #2c3e50;
+    }
+    span:nth-of-type(3) {
+      font: normal normal bold 12px/17px Montserrat;
+      color: #cdd5e1;
+    }
+    .color {
+      width: 7px;
+      height: 7px;
+      background-color: #ca4e82;
+      border-radius: 50%;
+    }
+  }
+}

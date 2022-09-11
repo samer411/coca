@@ -1,0 +1,15 @@
+@import "../../dashboard/shared/shared.scss";
+.progresss {
+  display: flex;
+  align-items: center;
+  .progress-bars {
+    .progress-bar-special {
+      width: 130%;
+      div {
+        ::ng-deep .mat-progress-bar-fill::after {
+          background-color: #2c3e50;
+        }
+      }
+    }
+  }
+}

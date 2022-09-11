@@ -1,0 +1,46 @@
+@import "../../../../../assets/scss/shared-styles/Variables.scss";
+.input {
+  position: relative;
+  i {
+    font-size: 13px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+  }
+  input {
+    box-shadow: 0px 3px 10px #0000001a;
+    border: none;
+    width: 100%;
+    padding: 5px 10px 5px 40px;
+    border-radius: 5px;
+  }
+}
+.container {
+  margin-top: 10px;
+  background-color: $w;
+  box-shadow: 0px 3px 10px #0000001a;
+  border-radius: 5px;
+  .head {
+    color: #2e4a79;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $btn-inactive;
+    i {
+      margin-right: 10px;
+    }
+  }
+  .row {
+    color: $planning-text;
+    span {
+      display: block;
+      margin: 10px 0;
+      font-size: 12px;
+    }
+    .first-col {
+      span:nth-of-type(1) {
+        font: normal normal bold 15px Roboto;
+      }
+    }
+  }
+}

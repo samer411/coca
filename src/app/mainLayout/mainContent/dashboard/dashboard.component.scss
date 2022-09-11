@@ -1,5 +1,11 @@
 @import "../../../../assets/scss/shared-styles/Variables.scss";
-
+span {
+  color: #003f5c;
+  font: normal normal 600 14px/19px Montserrat;
+  position: absolute;
+  left: 250px;
+  top: 60px;
+}
 .container {
   margin-top: 50px;
   .row {
@@ -7,7 +13,6 @@
       border: none;
       background-color: transparent;
       padding: 0 20px;
-
       .first-row {
         .col {
           background-color: $w;

@@ -1,0 +1,38 @@
+@import "../../../../../assets/scss/shared-styles/Variables.scss";
+
+.head {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  span {
+    color: #003f5c;
+    font: normal normal 600 14px/19px Montserrat;
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    background-color: $w;
+    width: 300px;
+    border-radius: 8px;
+
+    button {
+      margin: 0;
+      border: none;
+      outline: none;
+      text-align: center;
+      width: 50%;
+      color: #4c788d;
+      font-size: 12px;
+      // font-weight: bold;
+      padding: 5px;
+      border-radius: 8px;
+      background-color: $w;
+    }
+    .active {
+      color: $w;
+      background-color: $light-blue;
+      box-shadow: 1px 2px 6px #0000001a;
+    }
+  }
+}

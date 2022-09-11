@@ -1,0 +1,15 @@
+<div *ngFor="let item of [].constructor(3)">
+  <div class="title">
+    <span class="color"></span><span>Actual Yield</span><span>bottle</span>
+  </div>
+  <canvas
+    baseChart
+    width="300"
+    height="147 "
+    [type]="'line'"
+    [data]="lineChartData"
+    [options]="lineChartOptions"
+    [legend]="lineChartLegend"
+  >
+  </canvas>
+</div>

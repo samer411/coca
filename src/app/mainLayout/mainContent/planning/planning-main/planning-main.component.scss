@@ -1,0 +1,35 @@
+@import "../../../../../assets/scss/shared-styles/Variables.scss";
+
+i {
+  padding: 13px;
+  font-size: 20px;
+  background-color: $w;
+  border-radius: 50%;
+}
+.container {
+  margin-top: 20px;
+  .row {
+    .col-2 {
+      margin-left: -30px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      i {
+        margin: 9px 0;
+        cursor: pointer;
+      }
+      i.show {
+        color: $w;
+        background-color: $light-blue;
+      }
+
+      .line {
+        border-right: 4px solid #4c788d;
+        color: #4c788d;
+        background-color: transparent;
+        height: 80px;
+        width: 0;
+      }
+    }
+  }
+}

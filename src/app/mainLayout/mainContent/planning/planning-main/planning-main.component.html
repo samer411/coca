@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-2" (click)="onButtonGroupClick($event)">
+      <i class="show" style="display: none" #default></i>
+      <i class="pi pi-server" #first></i>
+      <div class="line"></div>
+      <i class="pi pi-clock" #second></i>
+      <div class="line"></div>
+      <i class="pi pi-cog" #third></i>
+      <div class="line"></div>
+      <i class="pi pi-compass" #fourth></i>
+    </div>
+    <app-planning-main-functions
+      class="col"
+      *ngIf="classChecker(default)"
+    ></app-planning-main-functions>
+    <app-planning-main-function
+      class="col"
+      *ngIf="classChecker(first)"
+    ></app-planning-main-function>
+    <app-planning-main-time
+      class="col"
+      *ngIf="classChecker(second)"
+    ></app-planning-main-time>
+    <app-planning-main-machine
+      class="col"
+      *ngIf="classChecker(third)"
+    ></app-planning-main-machine>
+    <app-planning-main-resources
+      class="col"
+      *ngIf="classChecker(fourth)"
+    ></app-planning-main-resources>
+  </div>
+</div>

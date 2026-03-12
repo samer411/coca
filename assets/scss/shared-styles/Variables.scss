@@ -1,0 +1,27 @@
+// colors
+$BC: #f8fafc; // Softer off-white background
+$Pri: #e21836; // Deeper, richer Coca-Cola red
+$Pri-dark: #b8142c; // Darker variant for hover states
+$w: #ffffff;
+$hv-color: rgba(0, 0, 0, 0.05); // Lighter, subtle hover
+$nav-buttons: #1e293b; // Sleek dark slate for navigation
+$btn-inactive: #94a3b8;
+$numbers: #64748b;
+$orange: #f97316;
+$header-color: #0f172a; // Near black for strong headings
+$planning-text: #334155;
+$light-blue: #3b82f6;
+$dark-grey: #475569;
+
+// shadows & structure
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$radius-sm: 0.375rem;
+$radius-md: 0.5rem;
+$radius-lg: 0.75rem;
+$radius-xl: 1rem;
+
+// screen sizes
+$tablet-width: 768px;
+$desktop-width: 1024px;
